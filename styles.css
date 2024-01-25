@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Kalam', cursive;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%; /* Set the width to 100% or adjust as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    font-size: 35px; 
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Kalam', cursive;
+    font-weight: 500;
+    padding: 15px 20px; /* Adjust padding for better spacing */
+    font-size: 24px; /* Adjust font size if needed */
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Set a fixed height or adjust as needed */
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.slide-content {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Adjust text color */
+    padding: 20px; 
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+}
+
+.slide-content h2 {
+    font-size: 55px;
+    margin-bottom: 4px;
+}
+
+.slide-content p {
+    font-size: 20px;
+    max-width: 400px; /* Adjust maximum width if needed */
+    margin: 0 auto;
+}
+
+#slide1 {
+    top: 80%;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+}
+
+#slide1 p{
+    max-width: 800px;
+}
+
+.academics-section {
+    text-align: center;
+    padding: 50px 0; /* Adjust padding for spacing */
+}
+
+.academics-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.academic-programs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.program {
+    width: 50%; /* Adjust width based on the number of programs you have */
+    padding: 20px;
+    margin: 20px 20px;
+    border: 1px solid #ddd; /* Add a border for separation */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.program h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.program p {
+    font-size: 16px;
+}
+
+.about-image{
+    height: 90%;
+}
+
+/* Responsive Styles for Mobile View */
+@media screen and (max-width: 767px) {
+    .navbar-nav {
+        margin-left: 0;
+    }
+
+    .navbar-toggler {
+        margin-right: 15px; /* Adjust margin for better spacing */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero-section {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .swiper-image {
+        height: auto; /* Allow images to scale based on width */
+    }
+
+    .slide-content {
+        width: 80%; /* Adjust content width for better readability */
+        padding: 10px; /* Adjust padding for better spacing */
+    }
+
+    .slide-content h2 {
+        font-size: 20px; /* Adjust font size for better readability */
+    }
+
+    .slide-content p {
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+}

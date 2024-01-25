@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Homepage</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Your custom CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand mb-0 h1" href="#">Hogwarts</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Admissions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="assets/hogwards2.jpg" alt="Slide 2" class="swiper-image">
+                    <div class="slide-content" id="slide1">
+                        <h2>The School of Witchcraft and Wizardry</h2>
+                        <p>Embark on an exciting journey at our School.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/hogwards.jpg" alt="Slide 1" class="swiper-image">
+                    <div class="slide-content">
+                        <h2>Welcome to Hogwards</h2>
+                        <p>The finest magical institutions in the wizarding world</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/hogwards3.jpg" alt="Slide 3" class="swiper-image">
+                    <div class="slide-content">
+                        <h2>Adventure Awaits</h2>
+                        <p>Embark on an exciting adventure at our second destination.</p>
+                    </div>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <section class="academics-section">
+        <div class="container">
+            <h2>Academic Programs</h2>
+            <p>We offer a diverse range of academic programs to cater to the individual needs of our students.</p>
+    
+            <div class="academic-programs">
+                <!-- Program 1 -->
+                <div class="program">
+                    <h3>Primary Education</h3>
+                    <p>Our primary education program provides a strong foundation for young learners.</p>
+                </div>
+    
+                <!-- Program 2 -->
+                <div class="program">
+                    <h3>Secondary Education</h3>
+                    <p>Prepare for higher education with our comprehensive secondary education curriculum.</p>
+                </div>
+    
+                <!-- Program 3 -->
+                <div class="program">
+                    <h3>Sports</h3>
+                    <p>Explore a variety of sports to enhance your skills and talents.</p>
+                </div>
+
+                <div class="program">
+                    <h3>Co-curricular Activities</h3>
+                    <p>Explore a variety of extracurricular activities to enhance your skills and talents.</p>
+                </div>
+    
+                <!-- Add more programs as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>About Us</h2>
+                    <p>Hogwarts School of Witchcraft and Wizardry, often shortened to Hogwarts, was a Scottish wizarding school located in the Scottish Highlands. It accepted any magical student residing in the islands of Great Britain and Ireland at the age of eleven years old at the start of the incoming term for enrolment. It was a state-owned school, funded by the British Ministry of Magic.</p>
+                    <p>The precise location of the school could never be uncovered because it was rendered Unplottable. To Muggles, the school appeared to be an old, abandoned castle. Similarly, most wizarding schools' locations were protected in order to protect the students and schools themselves from any harm.</p>
+                    <p>Established around the 10th century, Hogwarts was considered to be one of the finest magical institutions in the wizarding world, though other notable schools included Beauxbatons Academy of Magic in France, the Durmstrang Institute implied to be in northern Europe, and Ilvermorny School of Witchcraft and Wizardry in the United States.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/hogwards4.jpg" class="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center bg-light p-3">
+        <p>&copy; 2024 School Name. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link to Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Link to Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var mySwiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                loop: true, // Enable loop mode
+                slidesPerView: 1, // Number of slides per view
+                spaceBetween: 30, // Space between each slide
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '"></span>';
+                    },
+                },
+            });
+        });
+    </script>
+
+</body>
+
+</html>
